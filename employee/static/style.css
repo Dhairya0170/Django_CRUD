@@ -1,0 +1,164 @@
+/* --- Global Font & Smoothness Reset --- */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f8fafc; /* Ultra-light modern slate gray background */
+    color: #334155;
+    margin: 0;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- Responsive Modern Cards --- */
+.container, 
+.container1, 
+.container2 {
+    max-width: 1100px;         /* Prevents container from stretching too wide */
+    width: 90%;                /* Allows fluid shrinking on mobile devices */
+    margin: 30px auto;         /* Centers the layouts perfectly on all screens */
+    padding: 30px;
+    background-color: #ffffff; /* Crisp white card background */
+    border-radius: 12px;       /* Smooth, soft corners */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05); /* Soft premium shadow */
+    box-sizing: border-box;
+}
+
+/* --- Clean Typography --- */
+h1 {
+    color: #0f172a;            /* Deep dark slate instead of raw green */
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+/* --- Premium Table Design --- */
+#customers {
+    width: 100%;
+    border-collapse: separate; /* Required to cleanly show rounded table borders */
+    border-spacing: 0;
+    margin-top: 10px;
+    border: 1px solid #e2e8f0; /* Muted slate border instead of harsh black */
+    border-radius: 8px;
+    overflow: hidden;          /* clips rows cleanly into the rounded borders */
+}
+
+#customers th {
+    background-color: #0f766e; /* Deep sophisticated teal */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 14px 16px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#customers td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+/* Remove bottom line on the final row for a cleaner finish */
+#customers tr:last-child td {
+    border-bottom: none;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f8fafc; /* Very soft alternating row color */
+}
+
+#customers tr:hover {
+    background-color: #f1f5f9; /* Subtle gray highlight on hover */
+    transition: background-color 0.2s ease;
+}
+
+#customers #mid {
+    text-align: center;
+}
+
+/* --- Polished Inputs --- */
+.container1 input,
+.container2 input {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+/* Gives inputs a nice premium focus glow when clicked */
+.container1 input:focus,
+.container2 input:focus {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+/* --- Micro-Interactions for Buttons --- */
+#customers button,
+.container1 button,
+.container2 button,
+.container button {
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#customers button {
+    width: 100%;
+}
+
+/* Action: Update (Modern Slate Blue) */
+#customers #up {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+#customers #up:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+/* Action: Delete (Clean Crimson) */
+#customers #del {
+    background-color: #dc2626;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+#customers #del:hover {
+    background-color: #b91c1c;
+    transform: translateY(-1px);
+}
+
+/* Action: Create / New Buttons (Matching Teal Accent) */
+.container1 #new,
+.container2 #new1,
+.container #new3 {
+    background-color: #0f766e;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.container1 #new:hover,
+.container2 #new1:hover,
+.container #new3:hover {
+    background-color: #115e59;
+    box-shadow: 0 4px 12px rgba(15, 118, 110, 0.2);
+    transform: translateY(-1px);
+}
